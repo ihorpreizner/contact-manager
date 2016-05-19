@@ -1,11 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
-	ini_set('display_startup_errors', 1);
-	error_reporting(E_ALL);
-
-	include('db.php');
-	session_start();
+require_once ('configuration.php');
 
 $contacts = ['firstname', 'lastname', 'email', 'homephone', 'workphone', 'cellphone', 'address1', 'address2', 'city', 'state', 'zip', 'country', 'birthdate'];
 foreach ($contacts as $key) {

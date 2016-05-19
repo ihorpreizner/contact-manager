@@ -1,11 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-include('db.php');
-session_start();
+require_once('configuration.php');
 	
 	if (empty($_POST['username']) || empty($_POST['password'])) {
 		$error = "Username or Password is empty";
